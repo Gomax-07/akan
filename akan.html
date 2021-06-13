@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<script src="script/script.js"></script>
+
+<body>
+    <div id="home">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                    <a class="navbar-brand" href="#">Akan Name</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#Akandesignator">Akan Designator</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="home-wrap text-center">
+            <h1 class="home-header">Akan Name Designator</h1>
+            <h2></h2>
+            <hr class="home-line">
+            <div class="home-buttons">
+                <a href="#" class="btn btn-default"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="btn btn-default"><i class="fa fa-linkedin"></i></a><a href="#" class="btn btn-default"><i class="fa fa-github"></i></a>
+                <a href="#" class="btn btn-default"><i class="fa fa-fire"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="about-wrap text-center">
+                <h1>ABOUT AKAN</h1>
+                <hr class="line">
+                <div class="about-text">
+                    <p></p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Front-End Skills:</h3>
+                        <ul class="skills-list">
+                            <li>Placeholder</li>
+                            <li>Placeholder</li>
+                            <li>Placeholder</li>
+                            <li>Placeholder</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Back-End Skills:</h3>
+                        <ul class="skills-list">
+                            <li>Placeholder</li>
+                            <li>Placeholder</li>
+                            <li>Placeholder</li>
+                            <li>Placeholder</li>
+                        </ul>
+                        <!-- col -->
+                    </div>
+                    <!-- row -->
+                </div>
+                <!-- about-wrap div -->
+            </div>
+            <!-- container div -->
+        </div>
+        <!-- about div -->
+    </div>
+
+    <div class="buttontop">
+        <a href="#top"><input type="button" class="btn4"></a>
+    </div>
+
+    <div class="form3" id="form">
+        <div id="result">
+            <form onsubmit="return getAkanName()">
+                <label class="formlabel">Date of Birth</label><br><br>
+                <input id="varMonth" name="userMonth" type="number" class="month" minlength="1" maxlength="2" required placeholder="Month(MM)"><br><br>
+                <input id="varDate" name="userDate" type="number" class="date" minlength="1" maxlength="2" required placeholder="Day(DD)"><br><br>
+                <input id="varYear" name="userYear" type="number" class="year" minlength="4" maxlength="4" required placeholder="Year(YYYY)"><br><br>
+
+                <label class="formlabel2">Gender</label><br><br>
+                <b style="padding-right: 10px">Male</b>
+                <input id="varMale" type="radio" name="gender" value="male" required>&nbsp;&nbsp;&nbsp;
+                <b style="padding-right: 10px"> Female</b>
+                <input id="varFemale" type="radio" name="gender" value="female" required>
+                </label><br><br>
+
+                <input id="get-name" class="btn2" type="submit" value="Submit">
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
