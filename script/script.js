@@ -83,7 +83,7 @@
                 if (varDate >= 1 && varDate <= 31) {
                     return true
                 } else {
-                    return false
+                    return false;
                 }
             } else {
                 return false;
