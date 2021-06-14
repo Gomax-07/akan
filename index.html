@@ -26,8 +26,9 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#Akandesignator">Akan Designator</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#form">Akan Designator</a></li>
+
+
                     </ul>
                 </div>
             </div>
@@ -37,7 +38,7 @@
         <div class="home-wrap text-center">
             <h1 class="home-header">Akan Name Designator</h1>
 
-            <br <br <p id="Ghana"> Bringing Ghana to the world.</p>
+            <br <br <p id="Ghana"> Bringing Ghana and African culture to the world.</p>
 
         </div>
     </div>
@@ -76,28 +77,29 @@
     </div>
 
     <div class="buttontop">
-        <a href="#top"><input type="button" class="btn4">Home</a>
+        <a href="#top"><input type="button" class="btn4">Back Home</a>
     </div>
 
     <div class="form3" id="form">
-        <div id="result">
-            <form onsubmit="return getAkanName()">
-                <label class="formlabel">Date of Birth</label><br><br>
-                <input id="varMonth" name="userMonth" type="number" class="month" minlength="1" maxlength="2" required placeholder="Month(MM)"><br><br>
-                <input id="varDate" name="userDate" type="number" class="date" minlength="1" maxlength="2" required placeholder="Day(DD)"><br><br>
-                <input id="varYear" name="userYear" type="number" class="year" minlength="4" maxlength="4" required placeholder="Year(YYYY)"><br><br>
+        <form onsubmit="return getAkanName()">
+            <label class="formlabel">Date of Birth</label><br><br>
+            <input id="varMonth" name="userMonth" type="number" class="month" minlength="1" maxlength="2" required placeholder="Month(MM)"><br><br>
+            <input id="varDate" name="userDate" type="number" class="date" minlength="1" maxlength="2" required placeholder="Day(DD)"><br><br>
+            <input id="varYear" name="userYear" type="number" class="year" minlength="4" maxlength="4" required placeholder="Year(YYYY)"><br><br>
 
-                <label class="formlabel2">Gender</label><br><br>
-                <b style="padding-right: 10px">Male</b>
-                <input id="varMale" type="radio" name="gender" value="male" required>&nbsp;&nbsp;&nbsp;
-                <b style="padding-right: 10px"> Female</b>
-                <input id="varFemale" type="radio" name="gender" value="female" required>
-                </label><br><br>
+            <label class="formlabel2">Gender</label><br><br>
+            <b style="padding-right: 10px">Male</b>
+            <input id="varMale" type="radio" name="gender" value="male" required>&nbsp;&nbsp;&nbsp;
+            <b style="padding-right: 10px"> Female</b>
+            <input id="varFemale" type="radio" name="gender" value="female" required>
+            </label><br><br>
 
-                <input id="get-name" class="btn2" type="submit" value="Submit">
+            <input id="get-name" class="btn2" type="submit" value="Submit">
 
-            </form>
-        </div>
+        </form>
+
+        <p id="result"></p>
+
     </div>
 </body>
 

@@ -1,21 +1,27 @@
 navbar {
-    background-color: #458B74;
+    background-color: #38c797;
     box-sizing: content-box;
+    float: left;
 }
 
 .navbar ul li a {
-    color: rgb(18, 63, 22) !important;
-    font-size: 30px;
+    color: rgb(61, 172, 70) !important;
+    font-size: 20px;
+    float: inline-end;
+    vertical-align: inherit;
 }
 
 .navbar ul li a:hover {
     background-color: rgb(39, 70, 25) !important;
     color: #8de494 !important;
+    float: inline-end;
+    text-align: right;
 }
 
 .navbar-brand {
-    color: rgb(15, 56, 14) !important;
-    font-size: 20px;
+    color: rgb(113, 202, 111) !important;
+    font-size: 30px;
+    float: left;
 }
 
 
@@ -96,8 +102,8 @@ h1 {
     margin-top: 30px;
     width: 50%;
     height: 2px;
-    background-color: orange;
-    border: none;
+    background-color: rgb(91, 161, 63);
+    border: darkgreen;
 }
 
 .about-text {
@@ -117,37 +123,6 @@ h1 {
     margin-left: 40px;
 }
 
-
-/***** PORTFOLIO *****/
-
-#portfolio {
-    padding-top: 30px;
-    padding-bottom: 40px;
-    background-color: #EEDFCC;
-}
-
-.portfolio-header {
-    color: #000;
-}
-
-.placeholder-item {
-    margin-top: 40px;
-    text-align: left;
-    overflow: hidden;
-}
-
-.placeholder-desc {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #000;
-}
-
-img {
-    border: 1px solid rgb(4, 24, 7);
-    border-radius: 5px;
-    width: 100%;
-}
-
 .divider {
     background-color: #246434;
     height: 3px;
@@ -156,4 +131,20 @@ img {
 .btn4:hover {
     color: darkgreen;
     background-color: rgb(51, 122, 128);
+}
+
+.form3 {
+    position: inherit;
+    top: 820px;
+    left: 600px;
+    height: auto;
+    width: 400px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-color: white;
+    color: #194b19;
+    border-radius: 30px;
+    border-color: darkgreen;
 }
