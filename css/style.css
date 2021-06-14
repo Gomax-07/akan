@@ -37,6 +37,13 @@ navbar {
     color: rgb(17, 32, 14);
 }
 
+#Ghana {
+    text-decoration-color: darkgreen;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
 h2 {
     font-family: 'Oswald';
     font-size: 40px;
