@@ -76,57 +76,57 @@
                 } else {
                     return false;
                 }
-            }
 
-            //validation of the 31 days
-            else if (varMonth === 1 || varMonth === 3 || varMonth === 5 || varMonth === 7 || varMonth === 8 || varMonth === 10 || varMonth === 12) {
-                if (varDate >= 1 && varDate <= 31) {
-                    return true
+
+                //validation of the 31 days
+                else if (varMonth === 1 || varMonth === 3 || varMonth === 5 || varMonth === 7 || varMonth === 8 || varMonth === 10 || varMonth === 12) {
+                    if (varDate >= 1 && varDate <= 31) {
+                        return true
+                    } else {
+                        return false;
+                    }
                 } else {
                     return false;
                 }
-            } else {
-                return false;
+
+
             }
 
+            //validation variables
+            let monthValid = valMonth();
+            let dayValid = valDay();
 
+            //Formula to determine day of birth given all input variables
+            let dayNumber = Math.floor((((Number(varYear.slice(0, 2)) / 4) - 2 * Number(varYear.slice(0, 2)) - 1) +
+                ((5 * Number(varYear.slice(2, 4)) / 4)) + ((26 * (varMonth + 1) / 10)) + varDate) % 7);
+
+
+            //selecting items on the arrays
+            let index;
+            // code to minus one from the day of the week since the array index for the weekDays will be 6 and not 7(weekDays[0] to weekDays[6])
+            if (dayNumber == 0) {
+                index = 6;
+            } else {
+                index = dayNumber - 1;
+            }
+
+            console.log(index);
+
+            if (varGender == "male" && monthValid && dayValid) {
+                document.getElementById('result').textContent = "Born on a " + weekDays[index] + " , Your Akan name is " + akanMale[index];
+                document.getElementById('result').style.fontSize = "25px";
+                document.getElementById('result').style.fontFamily = "Segoe UI";
+
+                return false;
+
+            } else if (varGender == "female" && monthValid && dayValid) {
+                document.getElementById('result').textContent = "Born on a " + weekDays[index] + " , Your Akan name is " + akanFemale[index];
+                document.getElementById('result').style.fontSize = "25px";
+                document.getElementById('result').style.fontFamily = "Segoe UI";
+
+                return false;
+
+            } else {
+                alert("Date error. Make sure you entered a\r valid number of days for that month");
+            }
         }
-
-        //validation variables
-        let monthValid = valMonth();
-        let dayValid = valDay();
-
-        //Formula to determine day of birth given all input variables
-        let dayNumber = Math.floor((((Number(varYear.slice(0, 2)) / 4) - 2 * Number(varYear.slice(0, 2)) - 1) +
-            ((5 * Number(varYear.slice(2, 4)) / 4)) + ((26 * (varMonth + 1) / 10)) + varDate) % 7);
-
-
-        //selecting items on the arrays
-        let index;
-        // code to minus one from the day of the week since the array index for the weekDays will be 6 and not 7(weekDays[0] to weekDays[6])
-        if (dayNumber == 0) {
-            index = 6;
-        } else {
-            index = dayNumber - 1;
-        }
-
-        console.log(index);
-
-        if (varGender == "male" && monthValid && dayValid) {
-            document.getElementById('result').textContent = "Born on a " + weekDays[index] + " , Your Akan name is " + akanMale[index];
-            document.getElementById('result').style.fontSize = "25px";
-            document.getElementById('result').style.fontFamily = "Segoe UI";
-
-            return false;
-
-        } else if (varGender == "female" && monthValid && dayValid) {
-            document.getElementById('result').textContent = "Born on a " + weekDays[index] + " , Your Akan name is " + akanFemale[index];
-            document.getElementById('result').style.fontSize = "25px";
-            document.getElementById('result').style.fontFamily = "Segoe UI";
-
-            return false;
-
-        } else {
-            alert("Date error. Make sure you entered a\r valid number of days for that month");
-        }
-    }
