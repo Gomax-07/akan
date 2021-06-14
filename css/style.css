@@ -28,7 +28,7 @@ navbar {
 /***** HOME *****/
 
 #home {
-    background: url(/images/africa1.webp) no-repeat center center fixed;
+    background: url(images/africa1.webp) no-repeat center center fixed;
     background-size: cover;
     height: 680px;
 }
