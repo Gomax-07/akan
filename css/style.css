@@ -61,15 +61,15 @@ h2 {
     margin: 10px;
     width: 100px;
     border-radius: 5px;
-    background-color: #458B74;
-    color: #fff;
+    background-color: #061410;
+    color: rgb(60, 153, 47);
     border: none;
     font-size: 25px;
 }
 
 .btn:hover {
-    background-color: #fff;
-    color: #458B74;
+    background-color: rgb(5, 17, 5);
+    color: #1c7759;
 }
 
 
@@ -132,8 +132,8 @@ h1 {
 
 .placeholder-item {
     margin-top: 40px;
-    text-align: center;
-    overflo: hidden;
+    text-align: left;
+    overflow: hidden;
 }
 
 .placeholder-desc {
@@ -143,12 +143,17 @@ h1 {
 }
 
 img {
-    border: 1px solid rgb(38, 87, 46);
+    border: 1px solid rgb(4, 24, 7);
     border-radius: 5px;
     width: 100%;
 }
 
 .divider {
-    background-color: #458B74;
+    background-color: #246434;
     height: 3px;
+}
+
+.btn4:hover {
+    color: darkgreen;
+    background-color: rgb(51, 122, 128);
 }
