@@ -13,7 +13,7 @@ Akan Name generator.
  
  A program that derives names(Akan Names)based on the gender and day of birth of an individual in any given year. 
 
-##Technologies Used:
+## Technologies Used:
 .Text-editor(Visual basic code.)
 .HTML.
 .CSS.
