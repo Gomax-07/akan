@@ -2,6 +2,11 @@ navbar {
     background-color: #38c797;
     box-sizing: content-box;
     float: left;
+    display: inline;
+}
+
+li {
+    display: inline-block;
 }
 
 .navbar ul li a {
@@ -9,6 +14,7 @@ navbar {
     font-size: 20px;
     float: inline-end;
     vertical-align: inherit;
+    display: inline-block;
 }
 
 .navbar ul li a:hover {
@@ -16,12 +22,14 @@ navbar {
     color: #8de494 !important;
     float: inline-end;
     text-align: right;
+    display: inline-block;
 }
 
 .navbar-brand {
     color: rgb(113, 202, 111) !important;
     font-size: 30px;
     float: left;
+    display: inline-block;
 }
 
 
