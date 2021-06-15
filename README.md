@@ -15,8 +15,11 @@ Akan Name generator.
 
 ## Technologies Used:
 .Text-editor(Visual basic code.)
+
 .HTML.
+
 .CSS.
+
 .Javascript.
 
 # Set-up Instructions:
