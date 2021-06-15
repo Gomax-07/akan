@@ -37,7 +37,7 @@ li {
 /***** HOME *****/
 
 #home {
-    background: url(/images/bkg1.png) no-repeat center center fixed;
+    background: url("/images/bkg1.png") no-repeat center center fixed;
     background-size: cover;
     height: 680px;
 }
@@ -152,7 +152,7 @@ h1 {
     padding-right: 40px;
     padding-top: 6px;
     padding-bottom: 70px;
-    background-image: url(/images/ghanawordmarkdrib.jpg);
+    background-image: url("/images/ghanawordmarkdrib.jpg");
     color: #194b19;
     border-radius: 30px;
     border-color: darkgreen;
