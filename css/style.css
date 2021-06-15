@@ -37,7 +37,7 @@ li {
 /***** HOME *****/
 
 #home {
-    background: url(/images/bkg1.png) no-repeat center center fixed;
+    background: url(images/bkg1.png) no-repeat center center fixed;
     background-size: cover;
     height: 680px;
 }
